@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "quarter_end": {
+      "type": "string",
+      "format": "date",
+      "description": "End date of the current reported fiscal quarter, YYYY-MM-DD. Not the publication or dividend date."
+    },
+    "quarter_revenue_usd_millions": {
+      "type": "number",
+      "description": "Current quarter revenue in USD millions from the financial table. Use the three-month period and exact table amount, not rounded headline billions."
+    },
+    "quarter_gaap_diluted_eps_usd": {
+      "type": "number",
+      "description": "Current quarter GAAP diluted earnings per share in USD per share. Not basic, non-GAAP or year-to-date EPS."
+    },
+    "quarter_non_gaap_diluted_eps_usd": {
+      "type": "number",
+      "description": "Current quarter non-GAAP diluted earnings per share in USD per share as presented in this release."
+    }
+  },
+  "required": [
+    "quarter_end",
+    "quarter_revenue_usd_millions",
+    "quarter_gaap_diluted_eps_usd",
+    "quarter_non_gaap_diluted_eps_usd"
+  ],
+  "additionalProperties": false
+}

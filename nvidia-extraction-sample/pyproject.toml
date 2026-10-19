@@ -1,0 +1,12 @@
+[project]
+name = "nvidia-extraction-sample"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Paul Scemama", email = "paul@datalab.to" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "omni-extract-bench[benchmark]>=1.0.0rc1",
+]
